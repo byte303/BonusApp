@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:textSize="16sp"
+        android:fontFamily="@font/fonts_bold"
+        android:textColor="@color/black"
+        android:text="Платежная система"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:checkedButton="@id/rbtPayPal">
+
+        <RadioButton
+            android:id="@+id/rbtPayPal"
+            android:drawableEnd="@drawable/paypal"
+            android:text="PayPal"
+            android:paddingHorizontal="16dp"
+            android:buttonTintMode="multiply"
+            android:buttonTint="@color/background"
+            android:button="@drawable/selector_button_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:drawableEnd="@drawable/qiwi"
+            android:text="ЯндексДеньги"
+            android:paddingHorizontal="16dp"
+            android:buttonTintMode="multiply"
+            android:buttonTint="@color/background"
+            android:button="@drawable/selector_button_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:drawableEnd="@drawable/webmoney"
+            android:text="WebMoney"
+            android:paddingHorizontal="16dp"
+            android:buttonTintMode="multiply"
+            android:buttonTint="@color/background"
+            android:button="@drawable/selector_button_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:drawableEnd="@drawable/mir"
+            android:text="Мир"
+            android:paddingHorizontal="16dp"
+            android:buttonTintMode="multiply"
+            android:buttonTint="@color/background"
+            android:button="@drawable/selector_button_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:text="Подтвердить"
+        android:layout_margin="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

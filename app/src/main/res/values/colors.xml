@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F9F9F9</color>
+    <color name="osn">#0B69FF</color>
+    <color name="text">#8D8D8D</color>
+    <color name="black">#1B1B1B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="greyish">#aaa8a8</color>
+
+    <color name="color_metro">#014171</color>
+    <color name="color_fozzy">#F50127</color>
+    <color name="color_ashan">#FFFFFF</color>
+    <color name="color_white_flower">#8370B2</color>
+    <color name="color_kari">#B51983</color>
+    <color name="color_silpo">#222E84</color>
+    <color name="color_fora">#79B928</color>
+    <color name="color_ringo">#7BC623</color>
+    <color name="color_five">#FFFFFF</color>
+</resources>
